@@ -1,0 +1,40 @@
+{
+  "tasks": [
+    {
+      "id": 1,
+      "text": "Dentist Appointment",
+      "day": "March 1st at 2:30pm",
+      "reminder": true
+    },
+    {
+      "id": 2,
+      "text": "First Day At School",
+      "day": "August  11th at 8:10am",
+      "reminder": true
+    },
+    {
+      "id": 3,
+      "text": "Recharge Car",
+      "day": "August  10th at 9:30pm",
+      "reminder": false
+    },
+    {
+      "text": "New task ",
+      "day": "Bims",
+      "reminder": true,
+      "id": 4
+    },
+    {
+      "text": "Test 114",
+      "day": "Fest 115",
+      "reminder": false,
+      "id": 8
+    },
+    {
+      "text": "Toggle now working",
+      "day": "Now",
+      "reminder": true,
+      "id": 9
+    }
+  ]
+}
