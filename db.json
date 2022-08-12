@@ -25,16 +25,16 @@
       "id": 4
     },
     {
-      "text": "Test 114",
-      "day": "Fest 115",
-      "reminder": false,
-      "id": 8
-    },
-    {
       "text": "Toggle now working",
       "day": "Now",
       "reminder": true,
       "id": 9
+    },
+    {
+      "text": "Testing Compo",
+      "day": "Now",
+      "reminder": true,
+      "id": 10
     }
   ]
 }

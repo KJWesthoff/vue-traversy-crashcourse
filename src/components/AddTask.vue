@@ -23,45 +23,47 @@
 
 </template>
 
-<script>
-    export default {
-        name:"AddTask",
-        data() {
-            return {
-                text: "", 
-                day:"",
-                reminder: false
-            }
-        },
-        methods: {
-            onSubmit(e) {
-                
-                e.preventDefault()
-                
-                if(!this.text) {
-                    alert("PLease add a task")
-                    return
-                }
 
-                const newTask = {
-                    //id: Math.floor(Math.random()*100000),
-                    text: this.text,
-                    day: this.day,
-                    reminder: this.reminder
+<script setup>
+import {ref, defineEmits} from 'vue'
+const emit = defineEmits(["add-task"])
 
-                }
-            
-                this.$emit("add-task", newTask)
 
-                // reset the form
-                this.text = ''
-                this.day = ''
-                this.reminder = false
-            }
-        }
-    }
+// setup state variables
+const text = ref("")
+const day = ref("")
+const reminder = ref(false)
+
+
+const onSubmit = (e) => {
+  e.preventDefault()
+  console.log("event:", e)
+  
+  if (!text.value) {
+    alert("PLease add a task")
+    return
+  }
+
+  const newTask = {
+    //id: Math.floor(Math.random()*100000),
+    text:text.value,
+    day:day.value,
+    reminder:reminder.value
+  }
+
+  
+  // emit stuff up the tree
+  emit("add-task", newTask)
+
+  // reset the form
+  text.value = ''
+  day.value = ''
+  reminder.value = false
+
+}
 
 </script>
+
 
 <style scoped>
 .add-form {
