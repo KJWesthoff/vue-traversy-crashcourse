@@ -1,9 +1,28 @@
 <template>
-    <button @click="onClick()" :style="{background:color}" class="btn">{{ text }}</button>
+    <button @click="onClick()" :style="{background:props.color}" class="btn">{{ props.text }}</button>
 
 </template>
 
-<script>
+
+<script setup>
+import { defineEmits, defineProps } from 'vue';
+const props = defineProps({
+    text:String,
+    color:String,
+})
+
+const emits = defineEmits(['btn-click'])
+
+const onClick = () => {
+    emits('btn-click')
+}
+
+</script>
+
+
+
+
+<!-- <script>
     export default {
         name:'ButtonOne',
         props: {
@@ -20,4 +39,4 @@
 
 
 
-</script>
+</script> -->
