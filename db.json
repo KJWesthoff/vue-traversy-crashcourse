@@ -10,7 +10,7 @@
       "id": 2,
       "text": "First Day At School",
       "day": "August  11th at 8:10am",
-      "reminder": true
+      "reminder": false
     },
     {
       "id": 3,
@@ -41,6 +41,18 @@
       "day": "Now",
       "reminder": true,
       "id": 11
+    },
+    {
+      "text": "ddsdf",
+      "day": "sdfsd",
+      "reminder": false,
+      "id": 12
+    },
+    {
+      "text": "Rouer Trouble",
+      "day": "Now",
+      "reminder": false,
+      "id": 13
     }
   ]
 }

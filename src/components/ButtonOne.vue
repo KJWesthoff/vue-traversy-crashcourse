@@ -1,6 +1,5 @@
 <template>
     <button @click="onClick()" :style="{background:props.color}" class="btn">{{ props.text }}</button>
-
 </template>
 
 
